@@ -1,8 +1,8 @@
 function Simulation( src,event )
 global Strings
 load('../data/CurrentVars')
-addpath('../bin')
-addpath('../bin/SolveODEs','../bin/quat_functions')
+addpath('../lib')
+addpath('../lib/SolveODEs','../lib/quat_functions')
 simbar = waitbar(0,'Simulating...');
 OM0=[var.p0,var.q0,var.r0];
 V0=[var.u0,var.v0,var.w0];

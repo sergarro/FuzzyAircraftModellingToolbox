@@ -1,6 +1,6 @@
 function CreateFuzzyModel( source,event )
 global Strings
-addpath('../bin');
+addpath('../lib');
 load('../data/CurrentVars')
 for i=1:length(Strings.coef.labels)
     for j=1:length(Strings.coef.(Strings.coef.labels{i}).labels)

@@ -1,6 +1,6 @@
 function  plotmf( source,event)
 global Strings
-addpath('../bin')
+addpath('../lib')
 load('../data/FuzzyVars')
 
 pop = findobj('Tag','mfvar');

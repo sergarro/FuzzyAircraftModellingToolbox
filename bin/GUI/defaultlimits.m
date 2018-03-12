@@ -1,6 +1,6 @@
 function defaultlimits( source,event)
 
-addpath('../bin')
+addpath('../lib')
 param.off=0;
 param = DefaultMaxMin(param);
 load('../data/CurrentVars')

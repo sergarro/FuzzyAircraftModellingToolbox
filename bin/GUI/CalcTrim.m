@@ -3,7 +3,7 @@ k=0;
 wb = waitbar(k,'Calculating Trim Values...');
 global Strings
 load('../data/CurrentVars')
-addpath('../bin')
+addpath('../lib')
 
 syms x y z u v w p q r phi theta Psi real; 
 syms epr delta_a delta_e delta_r Windx Windy Windz real;
