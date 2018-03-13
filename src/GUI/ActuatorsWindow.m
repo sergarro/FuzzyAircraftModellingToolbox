@@ -2,7 +2,7 @@
     global Strings
     a=2/11;
     b=2/13;
-    load('../data/CurrentVars')
+    load('data/CurrentVars')
     fig = figure(2);
     set(fig,'Menubar','none');
     set(fig,'Units','normalized');

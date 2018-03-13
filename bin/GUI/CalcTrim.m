@@ -2,8 +2,8 @@ function CalcTrim(src,event)
 k=0;
 wb = waitbar(k,'Calculating Trim Values...');
 global Strings
-load('../data/CurrentVars')
-addpath('../lib')
+load('data/CurrentVars')
+addpath('lib')
 
 syms x y z u v w p q r phi theta Psi real; 
 syms epr delta_a delta_e delta_r Windx Windy Windz real;
@@ -56,7 +56,7 @@ for i=1:length(Strings.Init.labels)
     set(h,'String',num2str(var.(Strings.(Strings.Init.labels{i}).labels{j})));
     end
 end
-save('../data/CurrentVars','var')
+save('data/CurrentVars','var')
 waitbar(1);
 close(wb)
 end

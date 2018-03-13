@@ -12,7 +12,7 @@ function [ dYoutdt ] = dFuzzyModeldt(t,Y,input_t,input_u,param)
 %  - dYoutdt : 1x13 vector with diferential states variables. 
 %              -->  [dOMdt,dVdt,dQuatdt,dXdt]
 %% Paths
-addpath('../lib');
+addpath('lib');
 %% Init values
 OM=Y(1,1:3)';
 V=Y(1,4:6)';

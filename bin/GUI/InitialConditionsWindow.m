@@ -3,7 +3,7 @@ global Strings
 VarStrings
 b=1/6;
 a=2/21;
-load('../data/CurrentVars');
+load('data/CurrentVars');
 fig = figure(3);
 set(fig,'Menubar','none');
 set(fig,'Units','normalized');

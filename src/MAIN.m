@@ -1,9 +1,11 @@
 close all; clear all; clc;
-%% Entradas (a revisar)
+%% Inputs
 global Strings
+addpath('GUI');
 margin = 0.05;
 VarStrings;
-load('../data/CurrentVars')
+load('data/CurrentVars')
+
 %% Elements
 fig = figure('Name','Fuzzy Modelling Framework for Aircraft Systems','NumberTitle','off');
 set(fig,'Menubar','none');
@@ -47,7 +49,7 @@ SelectPanel(source,event)
               'Tag','help',...
               'Position',[0.4,0.5-margin,0.1,margin],...
               'String','Model description',...
-              'Callback','open ../doc/Model_Description.pdf');
+              'Callback','open doc/Model_Description.pdf');
     
 %% Fuzzy panel input
     fuzzypanel =uipanel('Parent',mainpanel,...
@@ -99,7 +101,7 @@ mfpanel =uipanel('Parent',mainpanel,...
                 'Position',[0.05,0.2,0.9,0.4]);
               a=  axes('Parent',fuzzyrules,...
                      'Position',[0,0,1,1]);  
-            [x,map]=imread('../resources/fuzzy_rules.JPG');
+            [x,map]=imread('resources/fuzzy_rules.JPG');
             x = imresize(x,3);
             imagesc(x)
             set(a,'Visible','off')

@@ -1,6 +1,6 @@
 function  savedata( source,event )
 
-load('../data/CurrentVars');
+load('data/CurrentVars');
 varName = source.Tag;
 value = str2num(source.String);
 
@@ -11,7 +11,7 @@ elseif (isempty(strfind(varName,'min'))==0)
 else
     var.(varName)=value;
 end
-    save('../data/CurrentVars','var');
+    save('data/CurrentVars','var');
     
 end
 

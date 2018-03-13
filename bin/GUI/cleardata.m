@@ -1,6 +1,6 @@
 function  cleardata( src,event)
 global Strings
-load('../data/CurrentVars')
+load('data/CurrentVars')
 
 for i=1:length(Strings.ButtonNames)
     if(strcmp(Strings.ButtonNames{i},'coef'))
@@ -15,7 +15,7 @@ for i=1:length(Strings.ButtonNames)
         end
     end
 end
-save('../data/CurrentVars');
+save('data/CurrentVars');
 source = findobj('Tag','mig');
 event=0;
 SelectPanel(source,event)

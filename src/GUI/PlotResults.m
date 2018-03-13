@@ -1,6 +1,6 @@
 function PlotResults( src,event )
 global Strings
-load('../data/SimResults')
+load('data/SimResults')
 pop = findobj('Tag','SelectStatesVar');
 
 figure('Name','Simulation Results')

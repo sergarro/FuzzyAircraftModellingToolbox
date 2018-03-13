@@ -4,7 +4,7 @@ global Strings
 b=1/8;
 a=2/19;
 ref = source.String;
-load('../data/CurrentVars');
+load('data/CurrentVars');
 
 for i=1:length(Strings.ButtonNames)
     
@@ -73,6 +73,6 @@ for i=1:length(Strings.ButtonNames)
             end
         end
     end
-    save('../data/CurrentVars','var');
+    save('data/CurrentVars','var');
 end
 

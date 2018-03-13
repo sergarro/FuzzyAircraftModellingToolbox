@@ -5,7 +5,7 @@ a=1/8;
 b=5/37;
 labels = Strings.fuzzylim.labels;
 units = Strings.fuzzylim.units;
-load('../data/CurrentVars')
+load('data/CurrentVars')
         for j=1:5
             if(1+2*(j-1)<=length(Strings.fuzzylim.labels))         
             uicontrol('Parent',source.Parent,...
@@ -71,6 +71,6 @@ load('../data/CurrentVars')
             end
         end
 
-save('../data/CurrentVars','var')
+save('data/CurrentVars','var')
 end
 

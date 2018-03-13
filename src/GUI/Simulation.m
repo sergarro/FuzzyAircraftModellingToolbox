@@ -1,8 +1,8 @@
 function Simulation( src,event )
 global Strings
-load('../data/CurrentVars')
-addpath('../lib')
-addpath('../lib/SolveODEs','../lib/quat_functions')
+load('data/CurrentVars')
+addpath('lib')
+addpath('lib/SolveODEs','lib/quat_functions')
 simbar = waitbar(0,'Simulating...');
 OM0=[var.p0,var.q0,var.r0];
 V0=[var.u0,var.v0,var.w0];
@@ -68,7 +68,7 @@ epr=ode1(@engines,t1(1),0.05,t1(end),0,t1,ep,param)+epr0*ones(length(tm),1);
 W=zeros(3,length(epr));
 input_u=[epr,delta,W'];
 
-load('../data/FuzzyVars')
+load('data/FuzzyVars')
 param.FIS = FIS;
 param.FIS.a = FIS.alpha;
 param.FIS.b = FIS.beta;
@@ -80,7 +80,7 @@ Yf1=[Yf(:,1:6),phi,theta,psi,Yf(:,11:end)];
 waitbar(1);
 close(simbar);
 
-save('../data/SimResults','Yf1','input_u','tm')
+save('data/SimResults','Yf1','input_u','tm')
 
 end
 

@@ -3,7 +3,7 @@ global Strings
 b=1/8;
 a=2/19;
 ref = source.String;
-load('../data/CurrentVars');
+load('data/CurrentVars');
 var.popup = source.Value;
 parent = findobj('Tag','mainpanel');
         var.currentpanel =2 ;
@@ -60,6 +60,6 @@ parent = findobj('Tag','mainpanel');
                                'Position',[8*a,1-(b/2+b)*j,a,b]);
             end
         end
-    save('../data/CurrentVars','var');
+    save('data/CurrentVars','var');
 end
 

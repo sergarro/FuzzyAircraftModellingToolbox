@@ -1,7 +1,7 @@
 function  plotmf( source,event)
 global Strings
-addpath('../lib')
-load('../data/FuzzyVars')
+addpath('lib')
+load('data/FuzzyVars')
 
 pop = findobj('Tag','mfvar');
 varname = Strings.mf.labels{pop.Value};
